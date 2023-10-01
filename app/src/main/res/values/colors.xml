@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="deep_taupe">#775553</color>
+    <color name="pale_pink">#ffd9d6</color>
+    <color name="congo_pink">#fe8981</color>
+    <color name="navajo_white">#ffdea6</color>
+    <color name="baby_blue_eyes">#A6C7FF</color>
+    <color name="moonstone_blue">#88008888</color>
+    <color name="gray">#808080</color>
+    <color name="deep_carmine_pink">#FF2D2D</color>
+
+</resources>

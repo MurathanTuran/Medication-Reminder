@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.Syrup.SyrupDetailsFragment"
+    android:background="@color/moonstone_blue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/syrupNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/syrup_name_tr"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:background="@drawable/edit_text_background"
+                app:layout_constraintEnd_toEndOf="@+id/howManyTimesSpinner"
+                app:layout_constraintStart_toStartOf="@+id/howManyTimesSpinner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/howManyTimesSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:background="@drawable/spinner_background"
+                android:popupBackground="@drawable/popup_spinner_background"
+                app:layout_constraintEnd_toEndOf="@+id/firstTimeText"
+                app:layout_constraintStart_toStartOf="@+id/setFirstButton"
+                app:layout_constraintTop_toBottomOf="@+id/syrupNameText"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setFirstButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/set_time_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintEnd_toStartOf="@+id/firstTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/howManyTimesSpinner" />
+
+            <TextView
+                android:id="@+id/firstTimeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/setFirstButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/setFirstButton"
+                app:layout_constraintTop_toTopOf="@+id/setFirstButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setSecondButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/set_time_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintEnd_toStartOf="@+id/secondTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setFirstButton"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/secondTimeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/setSecondButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/setSecondButton"
+                app:layout_constraintTop_toTopOf="@+id/setSecondButton"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setThirdButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/set_time_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintEnd_toStartOf="@+id/thirdTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setSecondButton"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/thirdTimeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/setThirdButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/setThirdButton"
+                app:layout_constraintTop_toTopOf="@+id/setThirdButton"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setFourthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/set_time_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintEnd_toStartOf="@+id/fifthTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setThirdButton"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/fourthTimeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/setFourthButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/setFourthButton"
+                app:layout_constraintTop_toTopOf="@+id/setFourthButton"
+                app:layout_constraintVertical_bias="1.0"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setFifthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/set_time_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintEnd_toStartOf="@+id/fifthTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setFourthButton"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/fifthTimeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/setFifthButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/setFifthButton"
+                app:layout_constraintTop_toTopOf="@+id/setFifthButton"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/save_tr"
+                android:textSize="16sp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/congo_pink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/howManyTimesSpinner"
+                app:layout_constraintStart_toStartOf="@+id/howManyTimesSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/setFifthButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

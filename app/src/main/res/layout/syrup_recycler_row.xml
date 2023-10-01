@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/recycler_row_background">
+
+    <TextView
+        android:id="@+id/syrupNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timesLinearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/leftGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ağrı Kesici" />
+
+    <ImageView
+        android:id="@+id/clockImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/syrupNameText"
+        app:layout_constraintEnd_toStartOf="@+id/deleteImageView"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_clock" />
+
+    <ImageView
+        android:id="@+id/deleteImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clockImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clockImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <LinearLayout
+        android:id="@+id/timesLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/leftGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/syrupNameText"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/firstTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12:30"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/time_text_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/secondTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="14:30"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/time_text_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/thirdTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="05:45"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/time_text_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fourthTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="15:23"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/time_text_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fifthTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="03:56"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/time_text_background"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

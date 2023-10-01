@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Medication Reminder</string>
+    <string name="set_time_tr">Saati Ayarla</string>
+    <string name="save_tr">Kaydet</string>
+    <string name="syrup_name_tr">Surup Adı</string>
+    <string name="pill_name_tr">Hap Adı</string>
+
+    <string-array name="howManyTimes">
+        <item>Günde 1</item>
+        <item>Günde 2</item>
+        <item>Günde 3</item>
+        <item>Günde 4</item>
+        <item>Günde 5</item>
+    </string-array>
+
+</resources>

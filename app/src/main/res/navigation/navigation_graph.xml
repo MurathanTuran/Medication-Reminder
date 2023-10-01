@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/categoriesFragment">
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.turanapps.medicationreminder.View.Fragment.Categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_syrupFragment"
+            app:destination="@id/syrupFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_pillFragment"
+            app:destination="@id/pillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/syrupFragment"
+        android:name="com.turanapps.medicationreminder.View.Fragment.Syrup.SyrupFragment"
+        android:label="fragment_syrup"
+        tools:layout="@layout/fragment_syrup" >
+        <action
+            android:id="@+id/action_syrupFragment_to_syrupDetailsFragment"
+            app:destination="@id/syrupDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/syrupDetailsFragment"
+        android:name="com.turanapps.medicationreminder.View.Fragment.Syrup.SyrupDetailsFragment"
+        android:label="fragment_syrup_details"
+        tools:layout="@layout/fragment_syrup_details" >
+        <action
+            android:id="@+id/action_syrupDetailsFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pillFragment"
+        android:name="com.turanapps.medicationreminder.View.Fragment.Pill.PillFragment"
+        android:label="fragment_pill"
+        tools:layout="@layout/fragment_pill" >
+        <action
+            android:id="@+id/action_pillFragment_to_pillDetailsFragment"
+            app:destination="@id/pillDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pillDetailsFragment"
+        android:name="com.turanapps.medicationreminder.View.Fragment.Pill.PillDetailsFragment"
+        android:label="fragment_pill_details"
+        tools:layout="@layout/fragment_pill_details" >
+        <action
+            android:id="@+id/action_pillDetailsFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+</navigation>

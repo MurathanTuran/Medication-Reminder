@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="set_time_tr">Saati Ayarla</string>
+    <string name="save_tr">Kaydet</string>
+    <string name="syrup_name_tr">Surup Adı</string>
+    <string name="pill_name_tr">Hap Adı</string>
+
+    <string-array name="howManyTimes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>
